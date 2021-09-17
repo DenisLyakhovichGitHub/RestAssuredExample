@@ -49,7 +49,6 @@ public class LastfmApiTest {
   // Генератор тестовых данных для @MethodSource("dataForGetCharacterByArtistNameAndCheckArtistName")
   private static Stream<Arguments> dataForGetCharacterByArtistNameAndCheckArtistName() {
     return Stream.of(
-        //тест фэйлится поскольку title динамически изменяется при каждом запросе  к серверу
         Arguments.of("Kylie Minogue", "Kylie Minogue")
     );
   }
