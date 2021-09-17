@@ -52,6 +52,7 @@ public class FakerApiTest {
     );
   }
 
+
   // Кейс 2. Получение данных книг и проверка статуса в body
   @ParameterizedTest
   @MethodSource("dataForGetCharacterByBookStatusAndCheckStatus")
@@ -71,7 +72,7 @@ public class FakerApiTest {
         );
   }
 
-  // Генератор тестовых данных для getCharacterByNameAndCheckStatus
+  // Генератор тестовых данных для getCharacterByBookStatusAndCheckStatus
   private static Stream<Arguments> dataForGetCharacterByBookStatusAndCheckStatus() {
     return Stream.of(
         Arguments.of("OK", "OK")
